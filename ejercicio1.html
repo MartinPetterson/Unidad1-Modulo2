@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <script type="text/javascript" src="ejercicio1.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+    <div class="contenedor"> </div>
+
+    <div class="boton rojo" onclick="cambiarFondo ('red') "></div>
+    <br>
+    <div class="boton azul" onclick="cambiarFondo ('blue')" ></div>
+    <br>
+    <div class="boton amarillo" onclick="cambiarFondo ('yellow')" ></div>
+
+<script>
+    var contenedor = document.getElementsByClassName ('contenedor') [0];
+    var boton = document.getElementsByClassName ('boton');
+    var rojo =document.getElementsByClassName ('rojo');
+    var azul = document.getElementsByClassName ('azul');
+    var amarillo = document.getElementsByClassName ('amarillo');
+
+
+    function cambiarFondo(color) {
+        document.querySelector('body').style.background = color ;
+    }
+
+</script>
+
+</body>
+</html>
